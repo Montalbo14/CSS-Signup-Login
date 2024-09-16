@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>LogIn Form</title>
+    </head>
+<body background="honkaibackground.jpeg">
+ 
+<h1> Nice to see you again!</h1>
+<label> Log In to your account</label>
+
+<br>
+<br>
+<label for="name">Email Address:</label>
+<br>
+<div class="input-box">
+<input type="text" id="name"  placeholder="Enter Email Address">
+</div>
+<br>
+<label for="pass">Password: </label>
+<br>
+
+<div class="input-box">
+    <input type="password" id="pass"placeholder="Enter Password">
+  <img src="eye-close.png" width="10px" id="eye">
+</div>
+<script>
+    let eye = document.getElementById("eye");
+    let pass = document.getElementById("pass");
+
+    eye.onclick = function(){
+        if(pass.type == "password"){
+            pass.type = "text";
+            eye.src =" eye-open.png";
+          
+        }else{
+            pass.type = "password";
+            eye.src ="eye-close.png"
+
+
+        }
+    }
+</script>
+
+
+
+<input type="checkbox" id="remember me" values="remember me" name="title">
+            <label for="remember me"> Remember Me</label>
+            <br>
+            <button>Log In</button>
+<p> Dont have an account? <a href="index.html">Click to Sign up</a></p>
+<br>
+
+
+</body>
+</html>
